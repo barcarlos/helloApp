@@ -12,7 +12,8 @@ public class HelloController {
 	
 	@GetMapping("/")	
 	public ResponseEntity getRoles() {
-		return ResponseEntity.ok().body("Build by jenkins, carlos hi,2,cambios");
+		log.info("Returning hello");
+		return ResponseEntity.ok().body("Hello");
 	}
 	
 }
